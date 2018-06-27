@@ -5,7 +5,7 @@
 
 	<groupId>fr.treeptik.app</groupId>
 	<artifactId>springboot.helloworld.rest</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2</version>
 	<packaging>jar</packaging>
 
 	<name>springboot.helloworld.rest</name>

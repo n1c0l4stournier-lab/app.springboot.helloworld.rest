@@ -10,5 +10,5 @@ spec:
         app: springboot-helloworld-rest
     spec:
       containers:
-      - image: n1c0l4stournier/springboot.helloworld.rest:0.0.1
+      - image: n1c0l4stournier/springboot.helloworld.rest:0.0.2
         name: springboot-helloworld-rest
