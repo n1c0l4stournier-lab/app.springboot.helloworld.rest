@@ -1,0 +1,9 @@
+version: "3.3"
+
+services:
+  api:
+    image: n1c0l4stournier/springboot.helloworld.rest:0.0.1
+    deploy:
+      replicas: 2
+    ports:
+    - 8181:8181

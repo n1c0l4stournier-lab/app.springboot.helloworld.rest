@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: springboot-helloworld-rest
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: springboot-helloworld-rest
+    spec:
+      containers:
+      - image: n1c0l4stournier/springboot.helloworld.rest:0.0.1
+        name: springboot-helloworld-rest
