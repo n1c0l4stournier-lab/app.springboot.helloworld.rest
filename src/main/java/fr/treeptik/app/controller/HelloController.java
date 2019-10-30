@@ -18,7 +18,6 @@ public class HelloController {
 	@ResponseBody
 	public ResponseEntity<String> hello() {
 		String hello = "Hello World!";
-		logger.info(hello);
 		return ResponseEntity.ok(hello);
 	}
 

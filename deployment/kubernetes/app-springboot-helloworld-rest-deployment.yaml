@@ -3,12 +3,16 @@ kind: Deployment
 metadata:
   name: springboot-helloworld-rest
 spec:
-  replicas: 2
+  replicas: 1
   template:
     metadata:
+      annotations:
+        prometheus.io/path: /actuator/prometheus
+        prometheus.io/port: "8181"
+        prometheus.io/scrape: "true"
       labels:
         app: springboot-helloworld-rest
     spec:
       containers:
-      - image: n1c0l4stournier/springboot.helloworld.rest:0.0.2
+      - image: n1c0l4stournier/promtest:1.0.0
         name: springboot-helloworld-rest
